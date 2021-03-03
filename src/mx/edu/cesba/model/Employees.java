@@ -17,7 +17,7 @@ public class Employees {
     
     
     //metodos para acceder al campo: private int id;
-    public void setid(int id){
+ /*   public void setid(int id){
         this.id =id;
     }
     public int getid(){
@@ -79,9 +79,8 @@ public class Employees {
     public String gethireDate(){
         return hireDate;
     }
-    
-    
-        public void getDetails() {
+    */
+    public void getDetails() {
         
         System.out.println("id: " + id);
         System.out.println("firstName: " + firstName);
@@ -91,6 +90,74 @@ public class Employees {
         System.out.println("phoneNumber: " + phoneNumber);
         System.out.println("salary: " + salary);
         System.out.println("hireDate: " + hireDate);
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName; 
+    }
+
+    public String getLastName() {
+        return lastName;
+    } 
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        if(age>=18 &&age<65){
+             this.age =age;
+      }else{
+    System.err.println("Edad invalida");
+        this.age = age;
+    }
+    }
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public int getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(int phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
+    public String getHireDate() {
+        return hireDate;
+    }
+
+    public void setHireDate(String hireDate) {
+        this.hireDate = hireDate;
     }
     
     
